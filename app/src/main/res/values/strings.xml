@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Students</string>
+    <string name="name">Add your Name</string>
+    <string name="surname">Add your surname</string>
+    <string name="am">Add your AM</string>
+    <string name="year">Add your year of Introduction</string>
+    <string name="average">Add your Average</string>
 </resources>
