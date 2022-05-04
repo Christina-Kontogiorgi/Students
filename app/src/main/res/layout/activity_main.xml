@@ -69,7 +69,7 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/data"
-        android:background="@color/yellow"/>
+        android:background="@color/yellow" />
 
 
 
