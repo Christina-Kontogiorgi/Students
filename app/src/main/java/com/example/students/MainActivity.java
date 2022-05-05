@@ -23,6 +23,7 @@ class Student{
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binder;
+    Student alldata= new Student();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
         binder.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                 alldata.name=binder.name.getText().toString();
+                 alldata.surname=binder.surname.getText().toString();
+                 alldata.am=binder.am.getText().length();//CHECK AGAIN
+                 alldata.years=binder.yearOfIntro.getText().length(); //CHECK AGAIN
+                 alldata.mo=binder.average.getText().length(); // not right
+
 
 
             }
