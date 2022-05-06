@@ -6,7 +6,7 @@ public class Student {
     public int am;
     public int years;
     public double mo;
-    public String Student(){
+    public String getTheBigString(){
           String all;
           all=name+", "+surname+", "+am+", "+years+", "+mo;
         return all;
