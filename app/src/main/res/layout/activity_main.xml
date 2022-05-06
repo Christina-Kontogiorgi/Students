@@ -25,35 +25,40 @@
             android:layout_height="wrap_content"
             android:hint="@string/name"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="text"/>
         <EditText
             android:id="@+id/surname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/surname"
             app:layout_constraintTop_toBottomOf="@id/name"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="text"/>
         <EditText
             android:id="@+id/am"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/am"
             app:layout_constraintTop_toBottomOf="@id/surname"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/yearOfIntro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/year"
             app:layout_constraintTop_toBottomOf="@id/am"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="number"/>
         <EditText
             android:id="@+id/average"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/average"
             app:layout_constraintTop_toBottomOf="@id/yearOfIntro"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="number"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
