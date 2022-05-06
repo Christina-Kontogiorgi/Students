@@ -1,14 +1,15 @@
 package com.example.students;
 
 public class Student {
-    String name;
-    String surname;
-    int am;
-    int years;
-    double mo;
-    public Student(){
-        String all;
-        all=name+""+surname+""+am+""+years+""+mo;
-        
+    public String name;
+    public String surname;
+    public int am;
+    public int years;
+    public double mo;
+    public String Student(){
+          String all;
+          all=name+", "+surname+", "+am+", "+years+", "+mo;
+        return all;
+
     }
 }

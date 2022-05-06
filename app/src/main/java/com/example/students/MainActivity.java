@@ -24,9 +24,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                  alldata.name=binder.name.getText().toString();
                  alldata.surname=binder.surname.getText().toString();
-                 alldata.am=binder.am.getText().length();//CHECK AGAIN
-                 alldata.years=binder.yearOfIntro.getText().length(); //CHECK AGAIN
-                 alldata.mo=binder.average.getText().length(); // not right
+                 alldata.am=Integer.parseInt(binder.am.getText().toString());
+                 alldata.years=Integer.parseInt(binder.yearOfIntro.getText().toString());
+                 alldata.mo=Double.parseDouble(binder.average.getText().toString());
+
+                 binder.text.setText(alldata.Student());
 
 
 
