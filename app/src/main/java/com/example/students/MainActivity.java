@@ -8,18 +8,7 @@ import android.view.View;
 
 import com.example.students.databinding.ActivityMainBinding;
 
-class Student{
-    String name;
-    String surname;
-    int am;
-    int years;
-    double mo;
-    public Student(){
-        String all;
-        all=name+""+surname+""+am+""+years+""+mo;
-        Log.e("",all);
-    }
-}
+
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binder;
