@@ -23,17 +23,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (alldata.getTheBigString()!=null)
-                    thisStudent=alldata.getTheBigString().toString();
-                else
-                    thisStudent="";
+
 
                 alldata.name = binder.name.getText().toString();
                 alldata.surname = binder.surname.getText().toString();
                 alldata.am = Integer.parseInt(binder.am.getText().toString());
                 alldata.years = Integer.parseInt(binder.yearOfIntro.getText().toString());
                 alldata.mo = Double.parseDouble(binder.average.getText().toString());
-                thisStudent+="\n"+alldata.getTheBigString()+"\n";
+                thisStudent+=alldata.getTheBigString()+"\n";
                 binder.text.setText(thisStudent);
 
 
