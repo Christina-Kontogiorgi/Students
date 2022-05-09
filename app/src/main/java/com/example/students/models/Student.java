@@ -6,10 +6,10 @@ public class Student {
     private int mAm;
     private int mYears;
     private double mMo;
-    public String All;
+    private String mAll;
     public String getTheBigString(){
-          All=mName+", "+mSurname+", "+mAm+", "+mYears+", "+mMo;
-        return All;
+          mAll=mName+", "+mSurname+", "+mAm+", "+mYears+", "+mMo;
+        return mAll;
 
 
     }
