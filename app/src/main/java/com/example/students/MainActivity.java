@@ -4,13 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-
+import com.example.students.models.Student;
 import com.example.students.databinding.ActivityMainBinding;
 
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binder;
-    Student alldata = new Student();
     public String thisStudent="";
 
     @Override
@@ -22,14 +21,12 @@ public class MainActivity extends AppCompatActivity {
         binder.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-
-                alldata.name = binder.name.getText().toString();
-                alldata.surname = binder.surname.getText().toString();
-                alldata.am = Integer.parseInt(binder.am.getText().toString());
-                alldata.years = Integer.parseInt(binder.yearOfIntro.getText().toString());
-                alldata.mo = Double.parseDouble(binder.average.getText().toString());
+                Student alldata = new Student();
+                alldata.setName(binder.name.getText().toString());
+                alldata.setSurname(binder.surname.getText().toString());
+                alldata.setAm(Integer.parseInt(binder.am.getText().toString()));
+                alldata.setYears(Integer.parseInt(binder.yearOfIntro.getText().toString()));
+                alldata.setMo(Double.parseDouble(binder.average.getText().toString())) ;
                 thisStudent+=alldata.getTheBigString()+"\n";
                 binder.text.setText(thisStudent);
 
