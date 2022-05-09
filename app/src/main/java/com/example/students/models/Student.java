@@ -9,7 +9,7 @@ public class Student {
     private String mAll;
     public String getTheBigString(){
           mAll=mName+", "+mSurname+", "+mAm+", "+mYears+", "+mMo;
-        return mAll;
+          return mAll;
 
 
     }

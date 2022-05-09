@@ -10,7 +10,7 @@ import com.example.students.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binder;
-    public String thisStudent="";
+    //public String thisStudent="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
                 alldata.setAm(Integer.parseInt(binder.am.getText().toString()));
                 alldata.setYears(Integer.parseInt(binder.yearOfIntro.getText().toString()));
                 alldata.setMo(Double.parseDouble(binder.average.getText().toString())) ;
-                thisStudent+=alldata.getTheBigString()+"\n";
-                binder.text.setText(thisStudent);
+                //thisStudent+=alldata.getTheBigString()+"\n";
+                //binder.text.setText(thisStudent);
+                binder.text.setText(binder.text.getText().toString()+alldata.getTheBigString()+"\n");
 
 
 
